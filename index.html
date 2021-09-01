@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css"/>
+    <title>Tour booking app</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-1">
+            <h1> Where do you want to visit this <span>holiday? </span></h1>
+            <div class="tour-container">
+                <div class="img-content">
+                    <h2>Califonia</h2>
+                    <img src="img/califonia.jpg" alt="califonia">
+                    <div class="content">
+                        <ul class="tour-list">
+                            <li>7 days tour</li>
+                            <li>Maximum number of 5</li>
+                            <li>From 7TH August</li>
+                            <li>Price $100</li>
+                        </ul>
+                        <a href="https://www.facebook.com/Exquisite-services-100825231775219/?ref=pages_you_manage" target="_blank"><button
+                                class="btn-book">Reach us now</button></a>
+                    </div>
+                </div>
+                <div class="img-content">
+                    <h2>Dubai</h2>
+                    <img src="img/dubai.jpg" alt="califonia">
+                    <div class="content">
+                        <ul class="tour-list">
+                            <li>7 days tour</li>
+                            <li>Maximum number of 5</li>
+                            <li>From 7TH August</li>
+                            <li>Price $100</li>
+                        </ul>
+                        <a href="https://www.facebook.com/Exquisite-services-100825231775219/?ref=pages_you_manage" target="_blank"><button
+                                class="btn-book">Reach us now</button></a>
+                    </div>
+                </div>
+                <div class="img-content">
+                    <h2>Pyramids</h2>
+                    <img src="img/egypt.jpg" alt="califonia">
+                    <div class="content">
+                        <ul class="tour-list">
+                            <li>7 days tour</li>
+                            <li>Maximum number of 5</li>
+                            <li>From 7TH August</li>
+                            <li>Price $100</li>
+                        </ul>
+                        <a href="https://www.facebook.com/Exquisite-services-100825231775219/?ref=pages_you_manage" target="_blank"><button
+                                class="btn-book">Reach us now</button></a>
+                    </div>
+                </div>
+                <div class="img-content">
+                    <h2>Israel</h2>
+                    <img src="img/israel.jpg" alt="califonia">
+                    <div class="content">
+                        <ul class="tour-list">
+                            <li>7 days tour</li>
+                            <li>Maximum number of 5</li>
+                            <li>From 7TH August</li>
+                            <li>Price $100</li>
+                        </ul>
+                        <a href="https://www.facebook.com/Exquisite-services-100825231775219/?ref=pages_you_manage" target="_blank"><button class="btn-book">Reach us now</button></a>
+                    </div>
+                </div>
+                <div class="img-content">
+                    <h2>Japan</h2>
+                    <img src="img/japan.jpg" alt="califonia">
+                    <div class="content">
+                        <ul class="tour-list">
+                            <li>7 days tour</li>
+                            <li>Maximum number of 5</li>
+                            <li>From 7TH August</li>
+                            <li>Price $100</li>
+                        </ul>
+                        <a href="https://www.facebook.com/Exquisite-services-100825231775219/?ref=pages_you_manage" target="_blank"><button
+                                class="btn-book">Reach us now</button></a>
+                    </div>
+                </div>
+                <div class="img-content">
+                    <h2>Malindi</h2>
+                    <img src="img/desert.jpg" alt="califonia">
+                    <div class="content">
+                        <ul class="tour-list">
+                            <li>7 days tour</li>
+                            <li>Maximum number of 5</li>
+                            <li>From 7TH August</li>
+                            <li>Price $100</li>
+                        </ul>
+                        <a href="https://www.facebook.com/Exquisite-services-100825231775219/?ref=pages_you_manage" target="_blank"><button
+                                class="btn-book">Reach us now</button></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-2">
+                <h2 >You have booked <span id="number">0</span> tours</h2>
+                <button id="close" class="close-btn">Home</button>
+                <div class="form">
+                    <form id="book-tour">
+                     <div class="form-group">
+                         <label for="tour">Tour</label>
+                         <input type="text" placeholder="Tour name" id='tour' class="form-control">
+                     </div>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" placeholder="Enter your name" id='name' class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="travellers">Number of travellers</label>
+                        <input type="text" placeholder="Enter number of travellers" id='travellers' class="form-control">
+                    </div>
+                    <button type="submit" class="add-btn">Register tour</button>
+                    </form>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tour</th>
+                            <th>Name</th>
+                            <th>NO: Travellers</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tour-list"></tbody>
+                </table>
+            </div>
+            <!--Home section-->
+            <div class="col-3">
+               <div class="video-container">
+                   <video class="bg-video" autoplay muted loop>
+                        <source src="video/video.bg.mkv" type="video/mp4" />
+                   </video>
+               </div>
+               <div class="text-container">
+    <p class="text-center">We are the fast developing tour organizing company globally. We organize tour to elegant and
+     memorable place over all the worl. Our current places of visitation are  <span class="element"></span></p>
+               </div>
+               <button class="book-btn" id="btn-book">Book tour</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="typed.js"></script>
+</body>
+</html>
